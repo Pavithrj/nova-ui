@@ -1,5 +1,5 @@
-import { Element, Link as ScrollLink } from "react-scroll";
-import Button from "../components/Button";
+import { Element, Link as ScrollLink } from 'react-scroll';
+import Button from '../components/Button';
 import HeroImage from './../assets/images/hero.png';
 import Zap from './../assets/images/zap.svg';
 
