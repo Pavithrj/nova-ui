@@ -28,7 +28,7 @@ const Header = () => {
     }, []);
 
     const NavLink = ({ title }) => (
-        <LinkScroll to={title} offset={-100} spy smooth activeClass="nav-active" className="uppercase transition-colors duration-500 cursor-pointer base-bold text-p4 hover:text-p1 max-lg:my-4 max-lg:h5"onClick={() => setIsOpen(false)}>
+        <LinkScroll to={title} offset={-100} spy smooth activeClass="nav-active" className="uppercase transition-colors duration-500 cursor-pointer base-bold text-p4 hover:text-p1 max-lg:my-4 max-lg:h5" onClick={() => setIsOpen(false)}>
             {title}
         </LinkScroll>
     );
