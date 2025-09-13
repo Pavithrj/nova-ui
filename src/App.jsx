@@ -1,6 +1,8 @@
 import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Features from './sections/Features';
+import Pricing from './sections/Pricing';
+import Faq from './sections/Faq';
 
 function App() {
     return (
@@ -10,6 +12,10 @@ function App() {
             <Hero />
 
             <Features />
+
+            <Pricing />
+
+            <Faq />
         </main>
     )
 };
