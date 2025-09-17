@@ -103,6 +103,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-
-
-// 1:43:30
