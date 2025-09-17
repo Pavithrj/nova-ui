@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import FaqLogo from './../assets/images/faq-logo.svg';
 import { faq } from "../constants";
+import FaqItem from "../components/FaqItem";
 
 const Faq = () => {
     const halfLength = Math.ceil(faq.length / 2);
@@ -32,7 +33,15 @@ const Faq = () => {
                             <FaqItem key={item.id} item={item} index={index} />
                         ))}
                     </div>
+
+                    <div className="relative flex-1 pt-24">
+                        {faq.slice(halfLength).map((item, index) => (
+                            <FaqItem key={item.id} item={item} index={halfLength + index} />
+                        ))}
+                    </div>
                 </div>
+
+                <div className="absolute faq-lin_after left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden"/>
             </div>
         </Element>
     )
